@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TOP-Library</title>
+        <script src="javascript.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="headerContainer">
+                <h1 id="title">Library</h1>
+            </div>
+            <div id="contentContainer">
+                <div id="sidebarContainer">
+                    <div class="mediaType">
+                        <img src="./Media/Icons/Bookshelf.svg" alt="Bookshelf icon" class="icons">
+                        <h4>Books</h4>
+                    </div>
+                    <div class="mediaType">
+                        <img src="./Media/Icons/Newspaper.svg" alt="Newspaper icon" class="icons">
+                        <h4>Articles</h4>
+                    </div>
+                    <div class="mediaType">
+                        <img src="./Media/Icons/Chef.svg" alt="Chef hat icon" class="icons">
+                        <h4>Recipes</h4>
+                    </div>
+                    <div class="mediaType">
+                        <img src="./Media/Icons/Youtube.svg" alt="Youtube icon" class="icons">
+                        <h4>Videos</h4>
+                    </div>
+                    <div class="mediaType">
+                        <img src="./Media/Icons/Film.svg" alt="Movie icon" class="icons">
+                        <h4>Movies</h4>
+                    </div>
+                    <div class="mediaType">
+                        <img src="./Media/Icons/Earbuds.svg" alt="Earbuds icon" class="icons">
+                        <h4>Songs</h4>
+                    </div>
+                </div>
+                <div id="cardContainer">
+                    <button id="addButton">Add</button>
+                    <div id="sampleCard" class="card">
+                        <div class="cardTitle">
+                            <h1>Title</h1>
+                        </div>
+                        <div class="cardValues">
+                            <div clasS="cardAuthor"></div>
+                            <div class="cardLength"></div>
+                            <div class="cardIsRead"></div>
+                        </div>
+                        <div class="cardFooter">
+                            <button class="cardButton deleteButton">Delete</button>
+                            <button class="cardButton toggleButton">Toggle</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="formContainer">
+                    <div id="formHeader"  class="transparent">
+                        <h1 id="formTitle">Add a book</h1>
+                    </div>
+                    <form action="" id="formContent" class="transparent">
+                        <div id="formInputs">
+                            <div class="inputFields">
+                                <input class="input" type="text" name="title" placeholder="Book title" id="bookTitle" required>
+                            </div>
+
+                            <div class="inputFields">
+                                <input class="input" type="text" name="author" placeholder="Author" id="bookAuthor" required>
+                            </div>
+
+                            <div class="inputFields">
+                                <input class="input" type="number" name="pages" placeholder="Number of pages?" id="pageCount" required>
+                            </div>
+
+                            <div id="isItRead">
+                                <h2>Already read?</h2>
+                                <div id="toggleSwitch">
+                                    <label class="switch">
+                                    <input type="checkbox" name="isRead" id="isRead">
+                                    <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="formFooter"  class="transparent">
+                        <div id="formButtons">
+                            <button type="submit" id="submitButton" form="formContent">Save</button>
+                            <button id="cancelButton">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footerContainer"></div>
+        </div>
+        
+    </body>
+</html>
